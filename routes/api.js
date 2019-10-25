@@ -6,17 +6,17 @@ const config = require('../controllers/config.js')
 const mongojs = require('mongojs')
 const db = mongojs(config.MONGO_HOST, ['customers'])
 
-const log = require('log')
-
-router.get('/', (req, res) => {
+router.get('/', (req, res, next) => {
 	db.customers.find((err, result) => {
-		res.json(result)
+		if (err) {
+			next(err)
+		} else {
+			res.json(result)
+		}
 	})
 })
 
-router.post('/', (req, res) => {
-	log(req.query)
-
+router.post('/', (req, res, next) => {
 	// validate and clean inputs
 	var cleansed = {}
 	for (var key in req.query) {
@@ -46,10 +46,13 @@ router.post('/', (req, res) => {
 				cleansed[key] = req.query[key]
 		}
 	}
-	log(cleansed)
 
 	db.customers.insert(cleansed, (err, result) => {
-		res.send(`sure thing boss`)
+		if (err) {
+			next(err)
+		} else {
+			res.send(`Input data successfully added!`)
+		}
 	})
 })
 
