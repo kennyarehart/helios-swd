@@ -1,0 +1,27 @@
+{
+	"name": "helios-swd",
+	"version": "1.0.0",
+	"description": "Helios take-home assignment",
+	"main": "index.js",
+	"scripts": {
+		"watch": "nodemon app.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kennyarehart/helios-swd.git"
+	},
+	"author": "Kenny Arehart",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/kennyarehart/helios-swd/issues"
+	},
+	"homepage": "https://github.com/kennyarehart/helios-swd#readme",
+	"devDependencies": {
+		"nodemon": "^1.19.4"
+	},
+	"dependencies": {
+		"express": "^4.17.1",
+		"log": "^6.0.0",
+		"mongojs": "^3.0.0"
+	}
+}
