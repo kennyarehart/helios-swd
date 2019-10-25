@@ -29,7 +29,7 @@ router.post('/', (req, res) => {
 
 			// conver to Boolean
 			case 'emailOptIn':
-				cleansed[key] = !!req.query[key]
+				cleansed[key] = req.query[key] === 'true'
 				break
 
 			// parse and convert array to Integers

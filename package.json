@@ -2,9 +2,9 @@
 	"name": "helios-swd",
 	"version": "1.0.0",
 	"description": "Helios take-home assignment",
-	"main": "index.js",
+	"main": "api/index.js",
 	"scripts": {
-		"watch": "nodemon app.js"
+		"start": "nodemon api/index.js"
 	},
 	"repository": {
 		"type": "git",
