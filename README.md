@@ -48,3 +48,7 @@ Make `POST` to `http://localhost:5000/` with the schema as query params
 #### Dashboard
 
 View real-time health of API at `http://localhost:5000/status`
+
+<b>NOTE:</b> This `master` branch leverages a community solution using [express-status-monitor](https://github.com/RafalWilinski/express-status-monitor)
+
+Switch to `feat/dashboard` branch to see a from scratch solution. With the time limitations, it is more stripped down but showcases the logic solution.
