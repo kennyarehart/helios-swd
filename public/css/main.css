@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #222222;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #fff;
+	padding: 1em;
+}
+
+#holder {
+	padding-top: 1em;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
