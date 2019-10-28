@@ -11,7 +11,7 @@ Extravaganza</b>.
 
 ### MongoDB
 
-If MongoDB is not installed, follow this installation guide: https://treehouse.github.io/installation-guides/mac/mongo-mac.html
+If MongoDB is not installed, follow this [installation guide](https://treehouse.github.io/installation-guides/mac/mongo-mac.html)
 
 Start up Mongo by opening a terminal window and run:
 `~/mongodb/bin/mongod`
