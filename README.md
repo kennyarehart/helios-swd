@@ -49,6 +49,6 @@ Make `POST` to `http://localhost:5000/` with the schema as query params
 
 View real-time health of API at `http://localhost:5000/status`
 
-<b>NOTE:</b> This `master` branch leverages a community solution using [express-status-monitor](https://github.com/RafalWilinski/express-status-monitor)
+<b>NOTE:</b> The `master` branch has been updated with a from scratch solution for the dashboard. With the time limitations, it is more stripped down but showcases the development logic that could be built upon to add more robust features like other community solutions.
 
-Switch to `feat/dashboard` branch to see a from scratch solution. With the time limitations, it is more stripped down but showcases the logic solution.
+The first pass of this was done with a community solution using [express-status-monitor](https://github.com/RafalWilinski/express-status-monitor). However, that has suddenly stopped working, even their example files abstracted out of this project are broken. So I suspect there is a problem with a dependency and I'm sure it will be resolved soon. Switch to the `community-dashboard` to see the original implementation.
