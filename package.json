@@ -25,6 +25,6 @@
 		"log": "^6.0.0",
 		"mongojs": "^3.0.0",
 		"on-headers": "^1.0.2",
-		"socket.io": "^2.3.0"
+		"socket.io": "^2.4.0"
 	}
 }
